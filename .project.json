@@ -12,19 +12,19 @@
   "infos": {
     "BidMultipleChoice": {
       "sourceFile": "scripts/punterActions.ral",
-      "sourceCodeHash": "d4bfa1d00c5b90f530b907e5662f15caf7d46b1acf990ca7640e6f3664f428ce",
+      "sourceCodeHash": "d1421a2ba5dfebd6100c865ba35e2ed480a558fb47afcddaffe6ab6af5f47430",
       "bytecodeDebugPatch": "",
       "codeHashDebug": ""
     },
     "BoostBet": {
       "sourceFile": "scripts/punterActions.ral",
-      "sourceCodeHash": "d4bfa1d00c5b90f530b907e5662f15caf7d46b1acf990ca7640e6f3664f428ce",
+      "sourceCodeHash": "d1421a2ba5dfebd6100c865ba35e2ed480a558fb47afcddaffe6ab6af5f47430",
       "bytecodeDebugPatch": "",
       "codeHashDebug": ""
     },
     "ClaimMultipleChoice": {
       "sourceFile": "scripts/punterActions.ral",
-      "sourceCodeHash": "d4bfa1d00c5b90f530b907e5662f15caf7d46b1acf990ca7640e6f3664f428ce",
+      "sourceCodeHash": "d1421a2ba5dfebd6100c865ba35e2ed480a558fb47afcddaffe6ab6af5f47430",
       "bytecodeDebugPatch": "",
       "codeHashDebug": ""
     },
