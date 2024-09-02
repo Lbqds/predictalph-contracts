@@ -18,6 +18,7 @@ import { default as ClaimMultipleChoiceScriptJson } from "../scripts/ClaimMultip
 import { default as DeployNewBetScriptJson } from "../scripts/DeployNewBet.ral.json";
 import { default as DestroyBetScriptJson } from "../scripts/DestroyBet.ral.json";
 import { default as EndBetScriptJson } from "../scripts/EndBet.ral.json";
+import { DIAOracleValue, AllStructs } from "./types";
 
 export const BidMultipleChoice = new ExecutableScript<{
   predict: HexString;
@@ -26,18 +27,21 @@ export const BidMultipleChoice = new ExecutableScript<{
   tokenIdToVote: HexString;
   amount: bigint;
   side: bigint;
-}>(Script.fromJson(BidMultipleChoiceScriptJson, "", []), getContractByCodeHash);
+}>(
+  Script.fromJson(BidMultipleChoiceScriptJson, "", AllStructs),
+  getContractByCodeHash
+);
 
 export const BoostBet = new ExecutableScript<{
   predict: HexString;
   amount: bigint;
-}>(Script.fromJson(BoostBetScriptJson, "", []), getContractByCodeHash);
+}>(Script.fromJson(BoostBetScriptJson, "", AllStructs), getContractByCodeHash);
 
 export const ClaimMultipleChoice = new ExecutableScript<{
   predict: HexString;
   addressToClaim: Address;
 }>(
-  Script.fromJson(ClaimMultipleChoiceScriptJson, "", []),
+  Script.fromJson(ClaimMultipleChoiceScriptJson, "", AllStructs),
   getContractByCodeHash
 );
 
@@ -62,14 +66,17 @@ export const DeployNewBet = new ExecutableScript<{
   tokenIdToVote: HexString;
   tokenIdToHodl: HexString;
   amountToHodl: bigint;
-}>(Script.fromJson(DeployNewBetScriptJson, "", []), getContractByCodeHash);
+}>(
+  Script.fromJson(DeployNewBetScriptJson, "", AllStructs),
+  getContractByCodeHash
+);
 
 export const DestroyBet = new ExecutableScript<{ bet: HexString }>(
-  Script.fromJson(DestroyBetScriptJson, "", []),
+  Script.fromJson(DestroyBetScriptJson, "", AllStructs),
   getContractByCodeHash
 );
 
 export const EndBet = new ExecutableScript<{ bet: HexString; sideWon: bigint }>(
-  Script.fromJson(EndBetScriptJson, "", []),
+  Script.fromJson(EndBetScriptJson, "", AllStructs),
   getContractByCodeHash
 );

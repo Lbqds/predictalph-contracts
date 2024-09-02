@@ -28,6 +28,12 @@
       "bytecodeDebugPatch": "",
       "codeHashDebug": ""
     },
+    "DIAOracleValue": {
+      "sourceFile": "price_fetcher.ral",
+      "sourceCodeHash": "0b4cfa86cb15cee0dbfb5d7f31800b82025f6b44aea7439558d6912f2bb84bc3",
+      "bytecodeDebugPatch": "",
+      "codeHashDebug": ""
+    },
     "DeployBets": {
       "sourceFile": "deployBet.ral",
       "sourceCodeHash": "7e4960ac553b6039a620208b15a7d0da6ba3f32d8f390e31cb6c2aaa614750e5",
@@ -58,11 +64,23 @@
       "bytecodeDebugPatch": "",
       "codeHashDebug": ""
     },
+    "IDIAOracle": {
+      "sourceFile": "price_fetcher.ral",
+      "sourceCodeHash": "0b4cfa86cb15cee0dbfb5d7f31800b82025f6b44aea7439558d6912f2bb84bc3",
+      "bytecodeDebugPatch": "",
+      "codeHashDebug": ""
+    },
     "MultipleChoice": {
       "sourceFile": "multiple-choice/round.ral",
       "sourceCodeHash": "64d269c85406aa289cd94a6636fae6499c69c127b1a9908a33eb4db4c1ed3568",
       "bytecodeDebugPatch": "",
       "codeHashDebug": "192d038af2b39b91225a84da178bae3f257cb0bcdc2b01f2e0f620a40b48bf76"
+    },
+    "PriceFetcher": {
+      "sourceFile": "price_fetcher.ral",
+      "sourceCodeHash": "0b4cfa86cb15cee0dbfb5d7f31800b82025f6b44aea7439558d6912f2bb84bc3",
+      "bytecodeDebugPatch": "",
+      "codeHashDebug": "234c356f92e0e441323a14f31234857df46285aba20dc9423bccba90b0f3714e"
     },
     "PunterChoice": {
       "sourceFile": "multiple-choice/punterChoice.ral",

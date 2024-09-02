@@ -33,6 +33,7 @@ import {
 } from "@alephium/web3";
 import { default as PunterChoiceContractJson } from "../multiple-choice/PunterChoice.ral.json";
 import { getContractByCodeHash } from "./contracts";
+import { DIAOracleValue, AllStructs } from "./types";
 
 // Custom types for the contract
 export namespace PunterChoiceTypes {
@@ -121,7 +122,7 @@ class Factory extends ContractFactory<
     return encodeContractFields(
       addStdIdToFields(this.contract, fields),
       this.contract.fieldsSig,
-      []
+      AllStructs
     );
   }
 
@@ -186,7 +187,7 @@ export const PunterChoice = new Factory(
     PunterChoiceContractJson,
     "",
     "8e136164cc165fab36e544f81ac788822b6a33aad1c259a700b203931d69ac26",
-    []
+    AllStructs
   )
 );
 

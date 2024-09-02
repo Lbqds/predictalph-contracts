@@ -33,6 +33,7 @@ import {
 } from "@alephium/web3";
 import { default as DeployBetsContractJson } from "../DeployBets.ral.json";
 import { getContractByCodeHash } from "./contracts";
+import { DIAOracleValue, AllStructs } from "./types";
 
 // Custom types for the contract
 export namespace DeployBetsTypes {
@@ -152,7 +153,7 @@ class Factory extends ContractFactory<
     return encodeContractFields(
       addStdIdToFields(this.contract, fields),
       this.contract.fieldsSig,
-      []
+      AllStructs
     );
   }
 
@@ -209,7 +210,7 @@ export const DeployBets = new Factory(
     DeployBetsContractJson,
     "",
     "1f8a75e96f73dc801c208d4918530f51bd3ae4886cb280d553355886b2549c1b",
-    []
+    AllStructs
   )
 );
 

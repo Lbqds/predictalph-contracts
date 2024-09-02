@@ -33,6 +33,7 @@ import {
 } from "@alephium/web3";
 import { default as MultipleChoiceContractJson } from "../multiple-choice/MultipleChoice.ral.json";
 import { getContractByCodeHash } from "./contracts";
+import { DIAOracleValue, AllStructs } from "./types";
 
 // Custom types for the contract
 export namespace MultipleChoiceTypes {
@@ -233,7 +234,7 @@ class Factory extends ContractFactory<
     return encodeContractFields(
       addStdIdToFields(this.contract, fields),
       this.contract.fieldsSig,
-      []
+      AllStructs
     );
   }
 
@@ -411,7 +412,7 @@ export const MultipleChoice = new Factory(
     MultipleChoiceContractJson,
     "",
     "192d038af2b39b91225a84da178bae3f257cb0bcdc2b01f2e0f620a40b48bf76",
-    []
+    AllStructs
   )
 );
 

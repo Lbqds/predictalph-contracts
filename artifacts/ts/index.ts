@@ -4,5 +4,6 @@
 
 export * from "./DeployBets";
 export * from "./MultipleChoice";
+export * from "./PriceFetcher";
 export * from "./PunterChoice";
 export * from "./scripts";
